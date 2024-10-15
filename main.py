@@ -23,7 +23,7 @@ def main():
     Returns:
         None
     """
-    file_path = "/home/shtlp_0046/Desktop/Assignment4/files/Networks 1.pptx"  # Change this to the file you want to process
+    file_path = "/home/shtlp_0046/Desktop/Assignment4/files/Networks 1.pptx"  
 
     # Determine the file type and use the appropriate loader
     if file_path.endswith(".pdf"):
