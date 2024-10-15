@@ -1,10 +1,11 @@
 import os
-from data_extractor.data_extractor.docx_extractor import DOCXExtractor
-from data_extractor.data_extractor.pdf_extractor import PDFExtractor
-from data_extractor.data_extractor.pptx_extractor import PPTXExtractor
-from data_extractor.file_loaders.pdf_loader import PDFLoader
+
 from data_extractor.file_loaders.docx_loader import DOCXLoader
+from data_extractor.file_loaders.pdf_loader import PDFLoader
 from data_extractor.file_loaders.ppt_loader import PPTLoader
+from data_extractor.info_extractor.docx_extractor import DOCXExtractor
+from data_extractor.info_extractor.pdf_extractor import PDFExtractor
+from data_extractor.info_extractor.pptx_extractor import PPTXExtractor
 from data_extractor.storage.file_storage import FileStorage
 from data_extractor.storage.sql_storage import SQLStorage
 
@@ -22,7 +23,7 @@ def main():
     Returns:
         None
     """
-    file_path = "/home/shtlp_0046/Desktop/Assignment4/files/sample.pdf"  # Change this to the file you want to process
+    file_path = "/home/shtlp_0046/Desktop/Assignment4/files/Networks 1.pptx"  # Change this to the file you want to process
 
     # Determine the file type and use the appropriate loader
     if file_path.endswith(".pdf"):
@@ -76,7 +77,7 @@ def main():
     print(f"Extracted data saved to: {output_dir}")
     
     # Create an instance of SQLStorage
-    sql_storage = SQLStorage()
+    sql_storage = SQLStorage('assignment4.db')
 
     # Store the extracted text in the SQL database
     sql_storage.store("text", extracted_text)

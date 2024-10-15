@@ -1,6 +1,8 @@
 import os
 from PyPDF2 import PdfReader
+
 from data_extractor.file_loaders.file_loader import FileLoader
+
 
 class PDFLoader(FileLoader):
 

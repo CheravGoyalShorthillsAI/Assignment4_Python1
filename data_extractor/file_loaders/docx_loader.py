@@ -1,5 +1,7 @@
 import docx
+
 from data_extractor.file_loaders.file_loader import FileLoader
+
 
 class DOCXLoader(FileLoader):
 

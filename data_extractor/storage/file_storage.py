@@ -3,7 +3,9 @@ import json
 import pandas as pd  # For saving tables as CSV
 from io import BytesIO
 from PIL import Image as PILImage
-from data_extractor.storage.storage import Storage  # For handling PPTX images
+
+from data_extractor.storage.storage import Storage
+
 
 class FileStorage(Storage):
     def __init__(self, output_dir: str):

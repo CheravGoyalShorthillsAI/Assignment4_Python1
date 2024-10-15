@@ -1,5 +1,7 @@
 import pptx
+
 from data_extractor.file_loaders.file_loader import FileLoader
+
 
 class PPTLoader(FileLoader):
     

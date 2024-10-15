@@ -1,8 +1,11 @@
+
+
 from data_extractor.storage.storage import Storage
 
+
 class SQLStorage(Storage):
-    def __init__(self):
-        super().__init__()
+    def __init__(self, database):
+        super().__init__(database)
 
     def store(self, table_name, data):
         # Sanitize the table_name variable

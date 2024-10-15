@@ -1,0 +1,27 @@
+[
+    {
+        "table_filename": "table_1.csv",
+        "row_count": 6,
+        "column_count": 4
+    },
+    {
+        "table_filename": "table_2.csv",
+        "row_count": 4,
+        "column_count": 3
+    },
+    {
+        "table_filename": "table_3.csv",
+        "row_count": 3,
+        "column_count": 3
+    },
+    {
+        "table_filename": "table_4.csv",
+        "row_count": 2,
+        "column_count": 3
+    },
+    {
+        "table_filename": "table_5.csv",
+        "row_count": 3,
+        "column_count": 3
+    }
+]
