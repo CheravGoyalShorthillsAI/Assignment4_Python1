@@ -1,3 +1,0 @@
-SERVICE,CLIENT SERVER,P2P
-DEPENDENCY,Clients are depend on the servers.,Clients are not depend on central
-servers.
