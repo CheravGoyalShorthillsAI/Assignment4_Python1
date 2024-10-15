@@ -1,0 +1,5 @@
+SERVICE,CLIENT SERVER,P2P
+SECURITY,The server controls security of network,No central control over security
+MANAGEMENT,The server manages the network .
+Needs a  dedicated team of people to manage the server .,No central  control over the network .
+Any one can set up.
