@@ -7,7 +7,7 @@ The python version **`3.12.3`**, and rest packages versions are mentioned in `re
 The `data_extractor` directory houses a set of tools specifically designed to extract data from various file formats and efficiently store the resulting information.
 
 ## How to Use
-To begin, clone the repository with command `git clone https://github.com/AmanBhattShorthillsAI/Assignment_3_python.git` and run the `requirements.txt` file to install the packages used in the project. <br>Run the project with `python main.py` command in terminal and give the absolute path of file you want to extract as an input.</br>
+To begin, clone the repository with command `git clone https://github.com/CheravGoyalShorthillsAI/Assignment4_Python1.git` and run the `requirements.txt` file to install the packages used in the project. <br>Run the project with `python main.py` command in terminal and give the absolute path of file you want to extract as an input.</br>
 
 ## Loaders
 The `data_extractor` directory features the following loaders, which facilitate data extraction from various file types:
