@@ -162,7 +162,7 @@ def test_create_directory_with_file_name():
 
     storage = FileStorage(output_dir)
     
-    storage.store(data['images'], file_name, 'image')
+    storage.store(data['images'], file_name, 'image')/home/shtlp_0046/Desktop/Assignment_4_python_UPDATED/data_extractor/tests/test_file.py
     storage.store(data['text'], file_name, 'text')
     storage.store(data['urls'], file_name, 'url')
     storage.store(data['tables'], file_name, 'data_table')
@@ -300,73 +300,3 @@ def test_save_to_invalid_sql_db():
     storage = SQLStorage('invalid_db')
     with pytest.raises(ValueError):
         storage.store('text', text, 'test_files/pdf/Sample_file.pdf')
-
-# # Perform an end-to-end test for loading, extracting, and storing mixed content.
-# def test_end_to_end():
-#     loader = PDFLoader()
-#     file_name = 'test_files/pdf/Sample_file.pdf'
-#     extractor = PDFExtractor(loader, file_name)
-#     data = extractor.extract_mixed_content()
-    
-#     base_name = os.path.splitext(os.path.basename(file_name))[0]
-#     output_dir = os.path.join("extracted_data", base_name)
-
-
-#     storage = FileStorage(output_dir)
-#     storage.save_mixed_content(data, 'test_file.pdf')
-
-
-#     assert os.path.exists(os.path.join(output_dir, 'test_file.pdf'))
-
-# # Simulate an interruption during the extraction process.
-# def test_extraction_interrupted():
-#     extractor = ExtractData('test_files/pdf/Sample_file.pdf')
-#     # simulate interruption
-#     with pytest.raises(KeyboardInterrupt):
-#         extractor.extractData()
-        
-# # Verify rollback or cleanup occurs if saving fails after extraction.
-# def test_rollback_on_save_failure():
-#     file_name = 'test_files/pdf/Sample_file.pdf'
-#     extractor = PDFExtractor(PDFLoader(), file_name)
-#     data = extractor.extract_mixed_content()
-    
-#     base_name = os.path.splitext(os.path.basename(file_name))[0]
-#     output_dir = os.path.join("extracted_data", base_name)
-
-
-#     storage = FileStorage()
-#     # simulate save failure
-#     with pytest.raises(IOError):
-#         storage.save_mixed_content(data, 'test_file.pdf')
-
-
-#     assert not os.path.exists(os.path.join(output_dir, 'test_file.pdf'))
-
-# # Validate metadata extraction from PDF of Images
-# def test_metadata_extraction_from_image_pdf():
-#     extractor = PDFExtractor(PDFLoader(), 'test_files/pdf/@@chinese.pdf')
-#     metadata = extractor.extract_metadata()
-#     assert 'images' in metadata
-
-# # Validate metadata extraction from PDF of Tables
-# def test_metadata_extraction_from_table_pdf():
-#     extractor = PDFExtractor(PDFLoader(), 'test_files/pdf/@@chinese.pdf')
-#     metadata = extractor.extract_metadata()
-#     assert 'tables' in metadata
-
-# # Validate metadata extraction from PDF of Links
-# def test_metadata_extraction_from_link_pdf():
-#     extractor = PDFExtractor(PDFLoader(), 'test_files/pdf/@@chinese.pdf')
-#     metadata = extractor.extract_metadata()
-#     assert 'links' in metadata
-
-# # Handle missing metadata in PDF
-# def test_handle_missing_metadata():
-#     extractor = PDFExtractor(PDFLoader(), 'test_files/pdf/Sample_file.pdf')
-#     metadata = extractor.extract_metadata()
-#     assert metadata is not None
-
-# # Test if all tests pass
-# def test_all_tests_pass():
-#     assert True
