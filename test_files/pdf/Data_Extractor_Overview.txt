@@ -1,0 +1,26 @@
+Data Extractor
+Overview
+The data_extractor folder provides a set of tools for extracting data from various file formats and storing the extracted data.
+
+Loaders
+The data_extractor folder includes the following loaders for extracting data from different file formats:
+
+PDFLoader: extracts data from PDF files
+DOCXLoader: extracts data from DOCX files
+PPTLoader: extracts data from PPTX files
+Data Extraction
+The data_extractor folder uses the loaders to extract data from files and provides a unified interface for accessing the extracted data.
+
+Storage
+The data_extractor folder includes the following storage options for storing the extracted data:
+
+FileStorage: stores extracted data in a file
+SQLStorage: stores extracted data in a SQL database
+Functionality
+The data_extractor folder provides the following functionality:
+
+Extracts data from PDF, DOCX, and PPTX files using the respective loaders
+Stores the extracted data in a file or SQL database using the storage options
+Provides a unified interface for accessing the extracted data
+Purpose
+The purpose of the data_extractor folder is to provide a convenient and efficient way to extract data from various file formats and store the extracted data for further analysis or processing.
